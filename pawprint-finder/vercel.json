@@ -1,0 +1,25 @@
+{
+  "name": "pawprint-finder",
+  "version": 2,
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "outputDirectory": ".next",
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": {
+      "description": "URL de tu proyecto Supabase"
+    },
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": {
+      "description": "Clave anónima de Supabase"
+    },
+    "NEXT_PUBLIC_APP_URL": {
+      "description": "URL de la aplicación en producción (ej: https://pawprint-finder.vercel.app)"
+    }
+  },
+  "functions": {
+    "api/**/*.ts": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "rewrites": []
+}
